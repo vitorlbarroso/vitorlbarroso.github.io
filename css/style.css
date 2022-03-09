@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    background: #0F0F0F;
+    cursor: url(../img/logo-vitor-barroso-dev-cursor.cur), default;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Barra de navegação */
+
+header .nav-header{
+    background-color: transparent;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+header .nav-item{
+    margin-top: 15px;
+}
+
+header .nav-link-person{
+    color: white;
+    margin: 0 6px;
+    cursor: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header .nav-link-person:hover{
+    color: #01cb65;
+    transition: 0.3s;
+}
+
+/* Sessão de apresentação */
+
+#apresentation{
+    height: 650px;
+    background-image: url("../img/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#apresentation .text-apresentation{
+    padding-top: 200px;
+    padding-left: 100px;
+}
+
+#apresentation .text-apresentation h1{
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 50px;
+    color: #01cb65;
+}
+
+#apresentation .text-apresentation h2{
+    font-family: 'Source Sans Pro';
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+/* Mouse de rolagem */
+
+.mouse-anchor{
+    width: 30px;
+    margin: 200px auto;
+}
+
+#mouse {
+	display: block;
+	width: 30px;
+	height: 55px;
+	border-radius: 20px;
+	border: 4px solid #01cb65;
+	text-align: center;
+}
+
+#mouse::before {
+	content: '';
+	display: inline-block;
+	width: 4px;
+	height: 8px;
+	position: relative;
+	border-radius: 4px;
+	background: #01cb65;
+	animation-name: mouse;
+    animation-duration: .9s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes mouse {
+	0% {
+		top: 0px;
+	}
+    50% {
+        top: 14px;
+        height: 10px;
+	}
+	100% {
+        top: 0px;
+	}
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 730px){
+    /* Barra de navegação */
+    
+    header .nav-item{
+        margin-top: 12px;
+    }
+    
+    /* Sessão de apresentação */
+    
+    #apresentation{
+        height: 600px;
+        background-image: url("../img/background1mobile.jpg");
+        background-size: cover;
+    }
+    
+    #apresentation .text-apresentation{
+        padding-top: 230px;
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    #apresentation .text-apresentation h1{
+        font-size: 35px;
+    }
+    
+    /* Mouse de rolagem */
+    
+    .mouse-anchor{
+        margin: 100px auto;
+    }
+    
+    #mouse {
+        width: 40px;
+        height: 70px;
+    }
+    
+}
