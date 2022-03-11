@@ -5,6 +5,7 @@ body{
     box-sizing: border-box;
     background: #0F0F0F;
     cursor: url(../img/logo-vitor-barroso-dev-cursor.cur), default;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -114,6 +115,70 @@ header .nav-link-person:hover{
 	}
 }
 
+/* Sobre mim */
+
+.background-about-me{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: auto;
+    background-color: #1d1d1d;
+}
+
+.title-about-me{
+    padding-top: 60px;
+    padding-left: 13%;
+}
+
+.title-about-me h2{
+    color: #01cb65;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.flex-contents-about-me{
+    display: flex;
+    justify-content: center;
+}
+
+.background-photo-about-me{
+    width: 450px;
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-about-me{
+    width: auto;
+    max-width: 98%;
+    max-height: 322px;
+    margin-top: 50px;
+}
+
+.photo-about-me img{
+    max-width: 100%;
+}
+
+.background-desc-about-me{
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.desc-about-me{
+    margin-top: 10%;
+    padding-right: 3%;
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
 
 /* Mobile */
 
@@ -127,13 +192,13 @@ header .nav-link-person:hover{
     /* Sessão de apresentação */
     
     #apresentation{
-        height: 600px;
+        height: 700px;
         background-image: url("../img/background1mobile.jpg");
         background-size: cover;
     }
     
     #apresentation .text-apresentation{
-        padding-top: 230px;
+        padding-top: 300px;
         padding-left: 0;
         text-align: center;
     }
@@ -153,4 +218,29 @@ header .nav-link-person:hover{
         height: 70px;
     }
     
+    /* Sobre mim */
+    
+    .title-about-me{
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    .flex-contents-about-me{
+        display: block;
+    }
+    
+    .background-photo-about-me{
+        width: 100%;
+        height: 350px;
+    }
+    
+    .photo-about-me img{
+        max-width: 90%;
+    }
+    
+    .background-desc-about-me{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
