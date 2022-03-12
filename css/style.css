@@ -179,6 +179,129 @@ header .nav-link-person:hover{
     letter-spacing: 0.3px;
 }
 
+/* Habilidades */
+
+.background-skills{
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.title-skills{
+    padding-top: 60px;
+    padding-left: 11%;
+}
+
+.title-skills h2{
+    color: #01cb65;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.background-skills-logos{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill-logo{
+    width: 130px;
+    height: 160px;
+    margin: 20px 40px;
+    transition: 0.3s;
+}
+
+.skill-logo p{
+    text-align: center;
+    margin-top: 140px;
+    color: yellow;
+    font-size: 12px;
+    letter-spacing: 2px
+}
+
+.skill-logo:hover{
+    width: 135px;
+    height: 165px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#skill-html{
+    background-image: url('../img/logo-lenguages/html-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#skill-html:hover{
+    background-image: url('../img/logo-lenguages/html-green.png');
+}
+
+#skill-css{
+    background-image: url('../img/logo-lenguages/css-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#skill-css:hover{
+    background-image: url('../img/logo-lenguages/css-green.png');
+}
+
+#skill-js{
+    background-image: url('../img/logo-lenguages/js-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#skill-js:hover{
+    background-image: url('../img/logo-lenguages/js-green.png');
+}
+
+#skill-php{
+    background-image: url('../img/logo-lenguages/php-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#skill-php:hover{
+    background-image: url('../img/logo-lenguages/php-green.png');
+}
+
+#skill-lua{
+    background-image: url('../img/logo-lenguages/lua-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#skill-lua:hover{
+    background-image: url('../img/logo-lenguages/lua-green.png');
+}
+
+#skill-mysql{
+    background-image: url('../img/logo-lenguages/mysql-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#skill-mysql:hover{
+    background-image: url('../img/logo-lenguages/mysql-green.png');
+}
+
+#skill-git{
+    background-image: url('../img/logo-lenguages/git-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#skill-git:hover{
+    background-image: url('../img/logo-lenguages/git-green.png');
+}
 
 /* Mobile */
 
@@ -242,5 +365,13 @@ header .nav-link-person:hover{
         width: 90%;
         margin: 0 auto;
         text-align: center;
+        padding-bottom: 40px;
+    }
+    
+    /* Habilidades */
+    
+    .title-skills{
+        text-align: center;
+        padding-left: 0;
     }
 }
