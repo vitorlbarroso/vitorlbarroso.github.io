@@ -8,6 +8,13 @@ body{
     scroll-behavior: smooth;
 }
 
+h1::selection,
+h2::selection,
+p::selection{
+    background-color: #01cb65;
+    color: #0F0F0F;
+}
+
 .container{
     max-width: 1440px;
     margin: 0 auto;
@@ -190,7 +197,7 @@ header .nav-link-person:hover{
 
 .title-skills{
     padding-top: 60px;
-    padding-left: 11%;
+    padding-left: 3%;
 }
 
 .title-skills h2{
@@ -373,5 +380,20 @@ header .nav-link-person:hover{
     .title-skills{
         text-align: center;
         padding-left: 0;
+    }
+    
+    .skill-logo{
+        width: 100px;
+        height: 130px;
+    }
+    
+    .skill-logo:hover{
+        width: 105px;
+        height: 135px;
+        margin-top: 10px;
+    }
+    
+    .skill-logo p{
+        margin-top: 110px;
     }
 }
